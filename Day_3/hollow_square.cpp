@@ -1,0 +1,57 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    
+int row;
+cout<<"enter number of rows"<<endl;
+cin>>row;
+
+int col;
+cout<<"enter numbers of columns"<<endl;
+cin>>col;
+
+
+for(int i=0;i<row;i++){
+
+
+if(i==0 || i==row-1){
+
+
+for(int j=0;j<col;j++){
+
+cout<<"* ";
+
+}
+
+
+}
+else {
+
+cout<<"* ";
+for(int k=0;k<row-2;k++){
+    
+    cout<<"  ";
+}
+cout<<"* ";
+
+
+
+
+
+
+
+}
+
+
+
+
+cout<<endl;
+
+
+}
+
+
+
+
+}
