@@ -1,15 +1,20 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n=4;
-    int b=0;
-    int h=6;
+   
+    
+    
+    int row;
+    cout<<"enter only odd number of rows in a hollow diamond";
+    
+    cin>>row;
+    int h=row-3;
 
-    for(int i=0;i<5;i++){
+    for(int i=0;i<row/2+1;i++){
 
 
 
-        for(int j=0;j<n;j++){
+        for(int j=i;j<row/2+1;j++){
             cout<<" ";
 
 
@@ -25,7 +30,7 @@ int main(){
             else {
                 cout<<"*";
 
-                for(int c=0;c<b;c++){
+                for(int c=0;c<i*2;c++){
                     cout<<" ";
 
 
@@ -41,8 +46,8 @@ int main(){
         }
 
 
-        n=n-1;
-        b=b+2;
+        
+        
 
         cout<<endl;
  
@@ -60,7 +65,7 @@ int main(){
     }  
 
 
-    for(int s=0;s<4;s++){
+    for(int s=0;s<row/2;s++){
 
         for(int t=0;t<=s;t++){
             cout<<" ";
@@ -68,12 +73,12 @@ int main(){
         }
 
         for(int z=s;z<=s;z++){
-            if(z==3){
+            if(z==row/2-1){
                 cout<<"*";
             }
             else{
                 cout<<"*";
-               for(int l=0;l<h;l++){
+               for(int l=0;l<=h;l++){
                 cout<<" ";
 
 
